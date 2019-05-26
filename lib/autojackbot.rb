@@ -1,0 +1,2 @@
+module Autojackbot
+end

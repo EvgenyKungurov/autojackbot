@@ -1,0 +1,3 @@
+project=autojackbot
+test=rspec
+template=erb
