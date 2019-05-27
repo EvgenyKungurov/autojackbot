@@ -21,8 +21,6 @@ RUN gem install bundler
 
 RUN bundle install
 
-COPY . .
-
 ENV LANG=en_US.UTF-8
 
 ENV HANAMI_HOST=0.0.0.0
