@@ -4,7 +4,7 @@ services:
     build: .
     env_file:
       - .env.production
-    command: "/bin/sh -c 'HANAMI_ENV=production bundle exec hanami server'"
+    command: "/bin/sh -c 'bundle install && HANAMI_ENV=production bundle exec hanami server'"
     ports:
       - 2300:2300
     container_name: web
