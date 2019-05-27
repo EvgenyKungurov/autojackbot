@@ -5,6 +5,7 @@ gem 'hanami',       '~> 1.3'
 gem 'hanami-model', '~> 1.3'
 gem 'telegram-bot-ruby'
 gem 'sqlite3'
+gem 'pg'
 gem 'sidekiq', '~> 4.0.2'
 
 group :development do
