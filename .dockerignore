@@ -1,0 +1,10 @@
+.env*
+.git
+Dockerfile
+.DS_Store
+.gitignore
+README.md
+init-letsencrypt.sh
+docker-compose.yml
+docker-entrypoint.sh
+TAGS
