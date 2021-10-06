@@ -24,8 +24,8 @@ GEM
     coderay (1.1.2)
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
-    concurrent-ruby (1.1.5)
-    connection_pool (2.2.2)
+    concurrent-ruby (1.1.9)
+    connection_pool (2.2.5)
     debug_inspector (0.0.3)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
@@ -138,10 +138,12 @@ GEM
     pg (1.1.4)
     public_suffix (3.0.3)
     rack (2.0.7)
+    rack-protection (2.1.0)
+      rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rake (12.3.2)
-    redis (3.3.5)
+    redis (4.4.0)
     regexp_parser (1.5.0)
     rom (3.3.3)
       concurrent-ruby (~> 1.0)
@@ -181,10 +183,10 @@ GEM
     sequel (4.49.0)
     shotgun (0.9.2)
       rack (>= 1.0)
-    sidekiq (4.0.2)
-      concurrent-ruby (~> 1.0)
-      connection_pool (~> 2.2, >= 2.2.0)
-      redis (~> 3.2, >= 3.2.1)
+    sidekiq (5.2.0)
+      connection_pool (~> 2.2, >= 2.2.2)
+      rack-protection (>= 1.5.0)
+      redis (>= 3.3.5, < 5)
     sqlite3 (1.4.1)
     telegram-bot-ruby (0.9.0)
       faraday
@@ -216,7 +218,7 @@ DEPENDENCIES
   rake
   rspec
   shotgun
-  sidekiq (~> 4.0.2)
+  sidekiq (~> 5.2.0)
   sqlite3
   telegram-bot-ruby
 
